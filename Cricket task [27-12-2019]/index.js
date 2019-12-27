@@ -51,10 +51,6 @@ function getScore2(){
   score2.innerHTML=secondTeamScore;
 //to count the players and overs per player
     if(counter2>0){
-        if(secondTeamScore===0 || counter2%6===0){
-          playerCount2--;
-        }
-
        secondTeamTotal.push(secondTeamScore);
     }else{
        team2_button.removeEventListener();
