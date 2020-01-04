@@ -17,19 +17,20 @@ playerScore2=JSON.parse(playerScore2);
 
 
 
-team_1.innerHTML="Total score of team1 (" + window.localStorage.getItem("total1")+")  Runs per ball" + key1;
-team_2.innerHTML="Total score of team2 (" + window.localStorage.getItem("total2") +") Runs per ball" + key2;
+team_1.innerHTML="Total score of team1 (" + window.localStorage.getItem("total1")+") <br> Runs per ball" + key1;
+team_2.innerHTML="Total score of team2 (" + window.localStorage.getItem("total2") +")<br> Runs per ball" + key2;
 
 for(let i=0;i<player1.length;i++){
-  let x=document.createElement("div");
-  x.innerHTML="Player"+"  "+player1[i] + "---"+playerScore1[i] +"("+ playerBall1[i]+")";
-  document.querySelector(".summary1").appendChild(x);
+  let x=document.createElement("tbody");
+  x.innerHTML="<tr><th scope=\"row\">player "+player1[i]+"</th><td>"+ playerScore1[i]+"("+ playerBall1[i]+")</td></tr>";
+  document.querySelector(".table1").appendChild(x);
 }
 
 for(let i=0;i<player2.length;i++){
-  let x=document.createElement("div");
-  x.innerHTML="Player"+"  "+player2[i] + "---"+playerScore2[i] +"("+ playerBall2[i]+")";
-  document.querySelector(".summary2").appendChild(x);
+  let x=document.createElement("tbody");
+  x.innerHTML="<tr><th scope=\"row\">player "+player2[i]+"</th><td>"+ playerScore2[i]+"("+ playerBall2[i]+")</td></tr>";
+  document.querySelector(".table2").appendChild(x);
 }
 
-window.localStorage.clear();
+
+// window.localStorage.clear();

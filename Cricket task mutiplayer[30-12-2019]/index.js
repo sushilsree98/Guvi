@@ -16,6 +16,7 @@ let playerScore2=[];
 let firstTeamTotal=[];// runs for each ball
 let secondTeamTotal=[];
 let a,b;//reduce function for each team
+let wicket1=0,wicket2=0;
 
 
 team1_button.addEventListener('click',getScore1);
@@ -34,6 +35,10 @@ function getScore1(){
       ballCount1++;
       individualTotal1+=firstTeamScore;
       if(firstTeamScore===0 || ballCount1===7){
+        if(firstTeamScore===0){
+          wicket1++;
+          document.querySelector(".wicket1").textContent="Wickets Fallen "+ wicket1;
+        }
         playerScore1.push(individualTotal1);
         individualTotal1=0;
         player1.push(playerCount1);
@@ -83,6 +88,10 @@ function getScore2(){
   score2.innerHTML=secondTeamScore;
 
     if(counter2>0 && playerCount2<=10){
+      if(secondTeamScore===0){
+        wicket2++;
+        document.querySelector(".wicket2").textContent="Wickets Fallen "+ wicket2;
+      }
       ballCount2++;
       individualTotal2+=secondTeamScore;
       if(secondTeamScore===0 || ballCount2===7){
