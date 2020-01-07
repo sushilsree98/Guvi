@@ -1,0 +1,15 @@
+body{
+  background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ), url("https://www.malextra.com/image-library/partners/rivals/land/1000/m/mcg-venue-d40dbc-rv.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+}
+
+button{
+  margin: 30px 0px;
+}
