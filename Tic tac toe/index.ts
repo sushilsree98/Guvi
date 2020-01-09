@@ -36,8 +36,6 @@ class game{
       }
       else if(cnt2==3){
         document.querySelector("h1").innerHTML="player2 wins";
-      }else if(gameChance==9){
-        document.querySelector("h1").innerHTML="Game draw";
       }
     }
   }

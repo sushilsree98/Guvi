@@ -36,9 +36,6 @@ var game = /** @class */ (function () {
             else if (cnt2 == 3) {
                 document.querySelector("h1").innerHTML = "player2 wins";
             }
-            else if (gameChance == 9) {
-                document.querySelector("h1").innerHTML = "Game draw";
-            }
         }
     };
     return game;
@@ -185,49 +182,3 @@ function player9() {
     gameChance++;
     button9.removeEventListener('click', player9);
 }
-// if(ar1.length>=3 || ar2.length>=3){
-//   let sar1=ar1.slice(-3);
-//   newar1.push(sar1)
-//   let sar2=ar2.slice(-3);
-//   newar2.push(sar2)
-// for (let i=0;i<arr.length;i++){
-//   for(let j=0;j<newar1.length;j++){
-//   if(JSON.stringify(arr[i])===JSON.stringify(newar1[j])||JSON.stringify(arr[i])===JSON.stringify(newar2[j]))
-//   {
-//     if(gameChance%2==0){
-//       document.querySelector("h1").innerHTML="player2 wins";
-//       button1.removeEventListener('click',player1);
-//       button2.removeEventListener('click',player2);
-//       button3.removeEventListener('click',player3);
-//       button4.removeEventListener('click',player4);
-//       button5.removeEventListener('click',player5);
-//       button6.removeEventListener('click',player6);
-//       button7.removeEventListener('click',player7);
-//       button8.removeEventListener('click',player8);
-//       button9.removeEventListener('click',player9);
-//
-//
-//     }else{
-//       document.querySelector("h1").innerHTML="player1 wins";
-//       button1.removeEventListener('click',player1);
-//       button2.removeEventListener('click',player2);
-//       button3.removeEventListener('click',player3);
-//       button4.removeEventListener('click',player4);
-//       button5.removeEventListener('click',player5);
-//       button6.removeEventListener('click',player6);
-//       button7.removeEventListener('click',player7);
-//       button8.removeEventListener('click',player8);
-//       button9.removeEventListener('click',player9);
-//     }
-//   }
-// }
-//   }
-//   if(ar1.length>3){
-//     ar1.shift();
-//   }
-//   if(ar2.length>3){
-//     ar2.shift();
-//   }
-//
-// }
-console.log(gameChance);
