@@ -1,0 +1,23 @@
+.subDiv1,.subDiv2,.subDiv3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainDiv .subDiv1 div,.mainDiv .subDiv2 div,.mainDiv .subDiv3 div{
+  border-style: solid;
+  width:100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainDiv .subDiv1 div img,.mainDiv .subDiv2 div img,.mainDiv .subDiv3 div img{
+  width: 30px;
+
+}
+
+.mainDiv{
+ padding: 150px 0px;
+ text-align: center;
+}
